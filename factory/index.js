@@ -1,9 +1,14 @@
 const WindowsDialog = require('./WindowsDialog');
 const WebDialog = require('./WebDialog');
 
-// config for Application. OS = Web or Windows
+// config for Application. OS = web or windows
 const cnfg = {
-  OS: 'Web'
+  OS: 'web'
+};
+
+const factories = {
+  windows: WindowsDialog,
+  web: WebDialog,
 };
 
 class Application {
@@ -11,13 +16,12 @@ class Application {
     this.dialog = null;
   }
   
-  // Init of dialog type based on config OS
+  // Init of dialog type based on config OS.
+  // Differs from book because in book example you have to wright all cases.
+  // Done for better optimisation.
   initialize() {
-    const config = cnfg;
-    if (config.OS === 'Windows') {
-      this.dialog = new WindowsDialog()
-    } else if (config.OS === 'Web') {
-      this.dialog = new WebDialog()
+    if (Object.prototype.hasOwnProperty.call(factories, cnfg.OS)) {
+      this.dialog = new factories[cnfg.OS]();
     } else {
       throw new Error('Error! Unknown operating system.')
     }
