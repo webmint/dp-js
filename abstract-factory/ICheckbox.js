@@ -1,4 +1,4 @@
-// JS mimic of interface;
+// JS mimic of interface
 class ICheckbox {
   paint() {
     throw new Error('You have to implement the method paint!');
