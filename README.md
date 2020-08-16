@@ -8,3 +8,5 @@ This is JS implementation examples of design patters described as pseudo code in
   * [Abstract Factory](https://refactoring.guru/design-patterns/abstract-factory) - [implementation](abstract-factory/index.js)
   * [Prototype](https://refactoring.guru/design-patterns/prototype) - [implementation](prototype/index.js)
   * [Singleton](https://refactoring.guru/design-patterns/singleton) - [implementation](singleton/index.js)
+2. Structural Design Patterns
+  * [Adapter](https://refactoring.guru/design-patterns/adapter) - [implementation](adapter/index.js)
