@@ -1,6 +1,6 @@
-# JS design patterns
+# Design patterns in JavaScript
 
-This is JS implementation examples of design patters described as pseudo code in book [Dive Into DESIGN PATTERNS](https://refactoring.guru/design-patterns/book) by Alexander Shvets.
+This is JavaScript implementation examples of design patters described as pseudo code in book [Dive Into DESIGN PATTERNS](https://refactoring.guru/design-patterns/book) by Alexander Shvets.
 
 1. Creational Design Patterns
   * [Factory](https://refactoring.guru/design-patterns/factory-method) - [implementation](factory/index.js)
@@ -10,3 +10,4 @@ This is JS implementation examples of design patters described as pseudo code in
   * [Singleton](https://refactoring.guru/design-patterns/singleton) - [implementation](singleton/index.js)
 2. Structural Design Patterns
   * [Adapter](https://refactoring.guru/design-patterns/adapter) - [implementation](adapter/index.js)
+  * [Bridge](https://refactoring.guru/design-patterns/bridge) - [implementation](bridge/index.js)
